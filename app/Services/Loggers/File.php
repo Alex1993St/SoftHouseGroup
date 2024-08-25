@@ -2,9 +2,9 @@
 
 namespace App\Services\Loggers;
 
-class File
+class File implements LogInterface
 {
-    public function send($message)
+    public function send($message): void
     {
         echo $message . ' was send via file';
     }

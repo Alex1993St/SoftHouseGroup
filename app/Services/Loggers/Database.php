@@ -2,10 +2,9 @@
 
 namespace App\Services\Loggers;
 
-
-class Database
+class Database implements LogInterface
 {
-    public function send($message)
+    public function send($message): void
     {
         echo $message . ' was send via db';
     }
